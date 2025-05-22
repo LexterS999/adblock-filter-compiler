@@ -1,7 +1,19 @@
 {
     "blocklist_urls": [
-        "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt",
-        "https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/trackers.hosts",
+        "https://energized.pro/ultimate/adblock.txt",
+        "https://energized.pro/antipopads-re/adblock.txt",
+        "https://energized.pro/regional/adblock.txt",
+        "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt",
+        "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/fake.txt",
+        "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt",
+        "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nosafesearch.txt",
+        "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/dyndns.txt",
+        "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
+        "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/urlshortener.txt",
+        "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt",
+        "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt",
+        "https://hosts.flossboxin.org.in/files/hosts",
+        "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/adblock.txt",
         "https://hblock.molinero.dev/hosts_adblock.txt"
     ]
 }
