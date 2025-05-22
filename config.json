@@ -13,6 +13,7 @@
         "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt",
         "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt",
         "https://hosts.flossboxin.org.in/files/hosts",
+        "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts",
         "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/adblock.txt",
         "https://hblock.molinero.dev/hosts_adblock.txt"
     ]
