@@ -13,9 +13,7 @@ This repository contains a Python script designed to compile and optimize variou
 
 By default, the script integrates the following filter lists:
 
-- [hagezi/dns-blocklists (pro.txt)](https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt)
-- [quidsup/notrack-blocklists (trackers.hosts)](https://gitlab.com/quidsup/notrack-blocklists/-/raw/master/trackers.hosts)
-- [hBlock/blocklist (hosts_adblock.txt)](https://hblock.molinero.dev/hosts_adblock.txt)
+
 
 You can customize the sources by modifying the `blocklist_urls` array in the `config.json` file.
 
