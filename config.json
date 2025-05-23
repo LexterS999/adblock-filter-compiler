@@ -11,6 +11,6 @@
         "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/urlshortener.txt",
         "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt",
         "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt",
-        "https://hosts.flossboxin.org.in/files/hosts"
+        "https://hblock.molinero.dev/hosts_adblock.txt"
     ]
 }
