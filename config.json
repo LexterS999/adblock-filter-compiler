@@ -4,6 +4,18 @@
         "https://raw.githubusercontent.com/cbuijs/oisd/refs/heads/master/big/domains.adblock",
         "https://raw.githubusercontent.com/cbuijs/1hosts/refs/heads/main/Pro/domains.adblock",
         "https://github.com/KnightmareVIIVIIXC/AIO-Firebog-Blocklists/raw/main/lists/aiofirebogbluegreen.txt",
-        "https://raw.githubusercontent.com/cbuijs/hblock/refs/heads/main/host_domains/domains.adblock"
+        "https://raw.githubusercontent.com/cbuijs/hblock/refs/heads/main/host_domains/domains.adblock",
+        "https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/easylist.txt",
+        "https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/easycookie.txt",
+        "https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/easyprivacy.txt",
+        "https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/fanboyannoyance.txt",
+        "https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/fanboysocial.txt",
+        "https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/antiadblock.txt",
+        "https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/advblock.txt",
+        "https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/NordicFiltersABP-Inclusion.txt",
+        "https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/easyprivacy_nointernational.txt",
+        "https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/fanboy-sounds.txt",
+        "https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/fanboy-newsletter.txt",
+        "https://raw.githubusercontent.com/thedoggybrad/easylist-mirror/main/abp-filters-anti-cv.txt"
     ]
 }
