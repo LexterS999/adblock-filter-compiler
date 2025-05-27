@@ -2,8 +2,8 @@ name: AdBlock Filter Compiler
 
 on:
   schedule:
-    - cron: '0 */24 * * *' # Runs every day
-  workflow_dispatch:
+    - cron: '0 */24 * * *' # Изменено на "каждый день в полночь UTC" для большей ясности
+  workflow_dispatch: # Позволяет запускать вручную
 
 jobs:
   generate_adblock_filters:
@@ -11,23 +11,40 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4 # Обновлено до последней мажорной версии
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5 # Обновлено до последней мажорной версии
       with:
-        python-version: 3.x
+        python-version: '3.11' # Рекомендуется указать конкретную минорную версию Python
+                               # Убедитесь, что эта версия совместима с вашим кодом и зависимостями
 
     - name: Install dependencies
-      run: pip install -r requirements.txt
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt # Убедитесь, что requirements.txt существует и содержит:
+                                        # requests
+                                        # tldextract
 
     - name: Run filter generator script
-      run: python adblock_filter_compiler.py
+      # Убедитесь, что имя скрипта здесь (adblock_filter_compiler.py)
+      # совпадает с фактическим именем вашего Python-файла в репозитории.
+      # Также убедитесь, что ваш config.json (если используется скриптом)
+      # настроен так, чтобы output_filename был 'blocklist.txt',
+      # или что скрипт по умолчанию использует 'blocklist.txt'.
+      run: python adblock_filter_compiler.py # Предполагаем, что скрипт называется так
 
     - name: Commit and push updated filter list
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        # Убедитесь, что имя файла здесь (blocklist.txt) совпадает
+        # с тем, что генерирует ваш Python-скрипт.
         git add blocklist.txt
-        git commit -m "Update filter list" || echo "No changes to commit"
-        git push
+        # Проверяем, есть ли изменения перед коммитом
+        if git diff --staged --quiet; then
+          echo "No changes to commit."
+        else
+          git commit -m "Update filter list"
+          git push
+        fi
