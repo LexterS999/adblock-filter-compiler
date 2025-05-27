@@ -284,7 +284,7 @@ def main():
         return
 
     blocklist_urls: List[str] = config.get('blocklist_urls', [])
-    output_filename: str = config.get('output_filename', 'blocklist_enhanced.txt')
+    output_filename: str = config.get('output_filename', 'blocklist.txt')
     request_timeout: int = config.get('request_timeout_seconds', DEFAULT_REQUEST_TIMEOUT_SECONDS)
     num_retries: int = config.get('request_retries', DEFAULT_REQUEST_RETRIES)
     retry_backoff: float = config.get('retry_backoff_factor', DEFAULT_RETRY_BACKOFF_FACTOR)
