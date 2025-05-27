@@ -28,7 +28,7 @@ DOMAIN_NAME_REGEX = re.compile(
 
 # --- Настройка логирования ---
 logging.basicConfig(
-    level=logging.CRITICAL, # Только критические ошибки будут выводиться
+    level=logging.INFO, # Только критические ошибки будут выводиться
     format="%(asctime)s - %(levelname)s - [%(funcName)s] - %(message)s"
 )
 logger = logging.getLogger(__name__)
