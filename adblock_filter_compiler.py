@@ -53,7 +53,7 @@ def _ensure_tldextract_imported():
 def get_tld_extract_result(domain: str):
     tldextract = _ensure_tldextract_imported()
     try:
-        return tldextract.extract(domain, no_fetch=True)
+        return tldextract.extract(domain)
     except Exception as e:
         logger.warning(f"Ошибка при извлечении TLD для '{domain}': {e}") # Не будет видно
         return None
